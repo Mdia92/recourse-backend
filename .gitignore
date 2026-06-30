@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# SECRETS — DO NOT TRACK (public Devpost GitHub repository)
+# The root .env file holds UiPath Cloud API credentials. It must never be
+# committed, staged, or pushed. Use .env.example for documented key names only.
+# ---------------------------------------------------------------------------
+.env
+**/.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
