@@ -18,10 +18,12 @@ cd recourse-backend
 
 Copy the environment template and fill in your UiPath tenant values:
 
-```bash
+```powershell
 # Windows PowerShell
 Copy-Item .env.example .env
+```
 
+```bash
 # macOS / Linux
 cp .env.example .env
 ```

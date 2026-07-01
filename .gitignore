@@ -48,6 +48,11 @@ htmlcov/
 *.swp
 *.swo
 
+# Cursor IDE — local editor/AI state (never commit chat or agent context)
+.cursor/
+*.code-workspace
+agent-transcripts/
+
 # OS
 .DS_Store
 Thumbs.db

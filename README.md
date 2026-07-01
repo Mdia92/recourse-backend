@@ -51,6 +51,8 @@ Secrets and credentials belong in `.env` at the project root. Copy values from y
 
 ## Getting Started
 
+See **[DEPLOYMENT.md](DEPLOYMENT.md)** for full setup, uvicorn on port `8000`, and ngrok tunnel instructions.
+
 ```bash
 # Create and activate a virtual environment
 python -m venv .venv
@@ -61,7 +63,7 @@ python -m venv .venv
 pip install -e ".[dev]"
 
 # Run the API server
-uvicorn orchestration.app:app --reload
+uvicorn orchestration.app:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ## Testing
@@ -72,6 +74,11 @@ Tests are isolated under `tests/` and mirror the production package layout:
 pytest
 ```
 
+## Hackathon submission
+
+- **[DEVPOST_SUBMISSION.md](DEVPOST_SUBMISSION.md)** — project story, architecture, and judge verification steps
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** — run the API and expose it with ngrok
+
 ## License
 
-Hackathon project — UiPath Devpost Hackathon.
+[MIT](LICENSE) — Copyright (c) 2026 Mdia92
